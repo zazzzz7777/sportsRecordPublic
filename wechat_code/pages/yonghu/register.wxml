@@ -1,0 +1,29 @@
+<view class="register-container">
+<view class="content">
+<view class="avatar-box">
+<image class="avatar" src="http://localhost:8080/sportsRecord/file/7856ba26477849ea828f481fa2773a95.jpg" mode="aspectFit" />
+</view>
+<view class="box">
+<input type="text" placeholder="用户账号" model:value="{{yonghuzhanghao}}"  />
+</view>
+<view class="box">
+    <input type="password" placeholder="请输入用户密码"     model:value="{{yonghumima}}" />
+</view>
+<view class="box">
+<input type="password" placeholder="请确认用户密码"     model:value="{{yonghumima2}}"/>
+</view>
+    <view class="box">
+        <input type="text" placeholder="用户姓名" model:value="{{yonghuxingming}}" />
+    </view>
+<view  class="box"    >头像</view>
+<image class="upload-img"   bindtap="touxiangTap"   src="{{tempPathtouxiang}}" mode="aspectFill"></image>
+<picker mode="selector" range="{{xingbieList}}" value="{{xingbieIndex}}" bindchange="xingbieChange">
+    <input type="text" placeholder="性别"  value="{{xingbieList[xingbieIndex]}}" />
+</picker>
+    <view class="box">
+        <input type="text" placeholder="手机号码" model:value="{{shoujihaoma}}" />
+    </view>
+    <button class="register-btn" bindtap="register">注册</button>
+
+</view>
+</view>
